@@ -1,0 +1,22 @@
+{
+  "name": "compress-images",
+  "version": "1.0.0",
+  "description": "Compress images for websites",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "compress",
+    "image",
+    "min"
+  ],
+  "author": "yoannchb",
+  "license": "MIT",
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}

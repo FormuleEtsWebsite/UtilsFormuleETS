@@ -1,0 +1,16 @@
+{
+  "name": "scrap-sponsors",
+  "version": "1.0.0",
+  "description": "scrap sponsors from original website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "got": "12.0.1",
+    "fast-html-dom-parser": "1.0.5",
+    "image-downloader": "4.1.0"
+  },
+  "author": "yoannchb",
+  "license": "MIT"
+}
