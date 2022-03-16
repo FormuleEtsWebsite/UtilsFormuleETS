@@ -17,6 +17,8 @@
   "dependencies": {
     "imagemin": "^8.0.1",
     "imagemin-jpegtran": "^7.0.0",
-    "imagemin-pngquant": "^9.0.2"
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "pngquant-bin": "^3.1.1"
   }
 }

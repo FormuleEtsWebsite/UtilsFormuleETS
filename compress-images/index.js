@@ -1,18 +1,20 @@
 import imagemin from 'imagemin';
-import imageminJpegtran from 'imagemin-jpegtran';
+import imageminMozjpeg from 'imagemin-mozjpeg';
 import imageminPngquant from 'imagemin-pngquant';
 
-console.log("Processing ...");
+(async function(){
+	console.log("Processing ...");
 
-const files = await imagemin(['images/*.{jpg,png}'], {
-	destination: 'result/',
-	plugins: [
-		imageminJpegtran(),
-		imageminPngquant({
-			quality: [0.6, 0.8]
-		})
-	]
-});
+	const files = await imagemin(['images/*.{jpg,png}'], {
+		destination: 'result/',
+		plugins: [
+			imageminMozjpeg(),
+			imageminPngquant({
+				quality: "60-80"
+			})
+		]
+	});
 
-console.log(files);
-console.log("End");
+	console.log(files);
+	console.log("End");
+})();
